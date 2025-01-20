@@ -1,0 +1,49 @@
+/* Custom styles */
+html {
+    scroll-behavior: smooth;
+}
+
+pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+code {
+    font-family: 'Fira Code', monospace;
+}
+
+/* Syntax highlighting overrides */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #6c7280;
+}
+
+.token.function {
+    color: #60a5fa;
+}
+
+.token.keyword {
+    color: #f472b6;
+}
+
+.token.string {
+    color: #34d399;
+}
+
+.token.number {
+    color: #fbbf24;
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+    
+    .mobile-menu.active {
+        display: block;
+    }
+}
