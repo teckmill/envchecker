@@ -1,0 +1,57 @@
+{
+  "name": "@envchecker/env-validator",
+  "version": "1.1.0",
+  "description": "A powerful environment variable validator for Node.js applications with schema validation, type checking, and security features",
+  "main": "src/validator.js",
+  "bin": {
+    "envchecker": "bin/cli.js",
+    "envchecker-init": "scripts/post-install.js"
+  },
+  "scripts": {
+    "test": "jest --setupFiles ./tests/setup.js",
+    "lint": "eslint .",
+    "prepublishOnly": "npm test && npm run lint",
+    "postinstall": "node scripts/post-install.js"
+  },
+  "keywords": [
+    "env",
+    "environment",
+    "validator",
+    "dotenv",
+    "validation",
+    "schema",
+    "type-checking",
+    "security",
+    "configuration"
+  ],
+  "author": "slrteck",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "glob": "^11.0.1",
+    "jest": "^29.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slrteck/envchecker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/slrteck/envchecker/issues"
+  },
+  "homepage": "https://github.com/slrteck/envchecker#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "type": "commonjs"
+}
